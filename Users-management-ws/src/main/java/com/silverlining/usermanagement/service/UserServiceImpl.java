@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public UserDto getUser(int id) {
+    public UserDto getUser(String id) {
 
         Optional<User> user;
 
@@ -61,18 +61,20 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void saveUser(UserDto user) {
+    public UserDto saveUser(UserDto user) {
         User u=new User();
 
         String id= UUID.randomUUID().toString();
-        if(user.getId()==null){
+        if(user.getId()==""){
             u.setId(id);
+            user.setId(id);
         }else{
             u.setId(user.getId());
         }
         u.setLastName(user.getLastName());
         u.setFirstName(user.getFirstName());
         userRepository.save(u);
+        return user;
     }
 
     @Override
