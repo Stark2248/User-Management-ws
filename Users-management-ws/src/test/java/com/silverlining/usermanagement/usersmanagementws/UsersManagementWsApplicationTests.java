@@ -1,4 +1,4 @@
-package com.SilverLining.Usersmanagementws;
+package com.silverlining.usermanagement.usersmanagementws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

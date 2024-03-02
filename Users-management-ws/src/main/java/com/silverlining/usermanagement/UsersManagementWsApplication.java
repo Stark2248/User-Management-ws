@@ -1,4 +1,4 @@
-package com.SilverLining.Usersmanagementws;
+package com.silverlining.usermanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
