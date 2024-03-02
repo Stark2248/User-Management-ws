@@ -21,6 +21,8 @@ public class UserServiceImpl implements UserService{
         this.userRepository=userRepository;
     }
 
+
+    //Getting all user from database
     @Override
     public List<UserDto> getAllUsers() {
         List<User> users=new ArrayList<>();
