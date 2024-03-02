@@ -1,4 +1,4 @@
-package com.silverlining.usermanagement.model;
+package com.silverlining.usermanagement.dto;
 
 public class UserDto {
     String id;

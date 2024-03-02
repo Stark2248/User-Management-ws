@@ -1,7 +1,7 @@
 package com.silverlining.usermanagement.service;
 
+import com.silverlining.usermanagement.dto.UserDto;
 import com.silverlining.usermanagement.model.User;
-import com.silverlining.usermanagement.model.UserDto;
 import com.silverlining.usermanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

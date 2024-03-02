@@ -1,7 +1,7 @@
 package com.silverlining.usermanagement.service;
 
 
-import com.silverlining.usermanagement.model.UserDto;
+import com.silverlining.usermanagement.dto.UserDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

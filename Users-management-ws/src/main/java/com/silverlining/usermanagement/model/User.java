@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Users")
+@Table(name = "Users")
 public class User {
 
     @Id
@@ -28,9 +28,6 @@ public class User {
     }
 
 
-
-
-
     public String getFirstName() {
         return firstName;
     }
@@ -46,10 +43,6 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-
-
-
 
 
 }
