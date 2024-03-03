@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService{
         User u=new User();
 
         String id= UUID.randomUUID().toString();
-        if(user.getId()==""){
+        if(user.getId().isEmpty()){
             u.setId(id);
             user.setId(id);
         }else{
