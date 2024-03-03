@@ -21,3 +21,11 @@ A service that handles all the Rest API calls on users data.
 
 Request to get all the users details from the table.
 
+![get All Request](/pics/getAll.png)
+
+
+> ** Get Request="/users/{id}" **
+
+Request to get a specific user detail by Id from the table.
+
+![get Id Request](/pics/getId.png)
