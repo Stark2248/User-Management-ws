@@ -11,9 +11,9 @@ public interface UserService {
 
     List<UserDto> getAllUsers();
 
-    UserDto getUser(int id) ;
+    UserDto getUser(String id) ;
 
-    void saveUser(UserDto user);
+    UserDto saveUser(UserDto user);
 
     boolean updateUser(UserDto user);
 
