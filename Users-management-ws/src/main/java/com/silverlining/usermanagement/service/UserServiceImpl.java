@@ -3,6 +3,7 @@ package com.silverlining.usermanagement.service;
 import com.silverlining.usermanagement.dto.UserDto;
 import com.silverlining.usermanagement.model.User;
 import com.silverlining.usermanagement.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -94,6 +95,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    @Transactional
     public boolean deleteUser(UserDto user){
 
         Optional<User> userReturn=userRepository.findById(user.getId());
