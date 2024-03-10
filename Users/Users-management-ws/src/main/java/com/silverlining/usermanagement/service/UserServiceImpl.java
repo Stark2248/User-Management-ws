@@ -4,6 +4,7 @@ import com.silverlining.usermanagement.dto.UserDto;
 import com.silverlining.usermanagement.model.User;
 import com.silverlining.usermanagement.repository.UserRepository;
 import jakarta.transaction.Transactional;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -66,7 +67,7 @@ public class UserServiceImpl implements UserService{
         User u=new User();
 
         String id= UUID.randomUUID().toString();
-        if(user.getId().isEmpty()){
+        if(StringUtils.isEmpty(user.getId())){
             u.setId(id);
             user.setId(id);
         }else{

@@ -24,7 +24,7 @@ public class UserController {
     }
 
 
-    @GetMapping("/users/all")
+    @GetMapping("/all")
     public ResponseEntity<List<UserResponseModel>> getAllUsers() {
         List<UserDto> list = userService.getAllUsers();
         if (list.isEmpty()) {
