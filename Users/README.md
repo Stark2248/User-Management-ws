@@ -21,29 +21,29 @@ A service that handles all the Rest API calls on users data.
 
 Request to get all the users details from the table.
 
-![get All Request](/pics/getAll.png)
+![get All Request](./pics/getAll.png)
 
 
 > ** Get Request="/users/{id}" **
 
 Request to get a specific user detail by Id from the table.
 
-![get Id Request](/pics/getId.png)
+![get Id Request](./pics/getId.png)
 
 > ** Post Request="/users/user" **
 
 Request to create user in the table.
 
-![post user Request](/pics/postUser.png)
+![post user Request](./pics/postUser.png)
 
 > ** Put Request="/users/{id}" **
 
 Request to update user in the table.
 
-![put user request](/pics/putId.png)
+![put user request](./pics/putId.png)
 
 > **Delete Request="/users/{id}" **
 
 Request to delete a specific user in the table.
 
-![delete user request](/pics/deleteId.png)
+![delete user request](./pics/deleteId.png)
